@@ -4,6 +4,6 @@ FishReport::Application.routes.draw do
 
   resources :flies
 
- get '/home' => 'fish_strategy#index', :as => 'home'
+  root :to => 'fish_strategy#index', :as => 'home'
  
 end

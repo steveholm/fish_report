@@ -20,16 +20,16 @@ class FishStrategyController < ApplicationController
 	    @weather = @get_weather['current_observation']
 
 
-	    if @weather['weather'] == 'Mostly Cloudy'
-	    	#raise @weather['weather'].inspect
-	    	@locaton = Location.find_by_name('Hyde Park')
-	    	@fly = Fly.where(:location_id => @location.id)
-	    end
+	    # if @weather['weather'] == 'Mostly Cloudy'
+	    # 	#raise @weather['weather'].inspect
+	    # 	@locaton = Location.find_by_name('Hyde Park')
+	    # 	@fly = Fly.where(:location_id => @location.id)
+	    # end
 
-	    # @chances = "High"
-	    # @spot = "Diversy Harbor"
-	    # @fly = "Wholly Bugger"
-	    # @tip = "If it's windy head to the north shore"
+	    @chances = "High"
+	    @spot = "Diversy Harbor"
+	    @fly = "Wholly Bugger"
+	    @tip = "If it's windy head to the north shore"
 
 
 	    # @image = "body-bg"
