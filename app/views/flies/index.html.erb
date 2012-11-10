@@ -1,0 +1,27 @@
+<h1>Listing flies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Picture url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @flies.each do |fly| %>
+  <tr>
+    <td><%= fly.name %></td>
+    <td><%= fly.location_id %></td>
+    <td><%= fly.picture_url %></td>
+    <td><%= link_to 'Show', fly %></td>
+    <td><%= link_to 'Edit', edit_fly_path(fly) %></td>
+    <td><%= link_to 'Destroy', fly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fly', new_fly_path %>
