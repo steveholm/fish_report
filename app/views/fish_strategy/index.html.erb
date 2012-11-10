@@ -1,5 +1,37 @@
-<%= @weather['temp_f'] %>
-<%= @weather['wind_mph'] %>
-<%= @weather['weather'] %>
-<img src="<%= @weather['icon_url'] %>"></img>
+<div class='content'>
+
+	<header class="row1">
+		<div class="weather pull-left"><h5>Today</h5><h4><%= @weather["temp_f"] %>°</h4></div>
+		<div class="ribbon"></div>
+		<div class="weather-icon-rainy pull-right"></div>
+		<h3 class="tagline">Dan's<br>Daily Fish<br>Report</h3>
+	</header>
+
+	<section class="reccomendations">
+
+		<div class="chances">
+			<h6>Chance of catching <span>a fish today<span></h6>
+			<h5><%= @chances %></h5>
+		</div>
+
+		<div class="spot">		
+			<h6>Dan's secret spot</h6>
+			<h5><%= @spot %></h5>
+		</div>
+
+		<div class="fly">
+			<h6>Dan says to use</h6>
+			<h5><%= @fly %></h5>
+		</div>
+
+	</section>
+
+	<button class="btn btn-warning btn-large"><h4>ASK DAN</h4></button>
+
+	<footer>
+		<h6>Brought to you by <a href="#">Dan's Tackle Shop</a></h6>
+		<h5>#savedan</h5>
+
+	</footer>
+</div>
 

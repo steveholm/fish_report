@@ -1,0 +1,162 @@
+// Color Variables
+
+$white: #ffffff;
+$black: #000000;
+
+
+
+body {
+	background: url('water.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  width: 320px;
+
+
+	.row1 {
+		position:relative;
+		height: 100px;
+		width: 310px;
+
+		.weather {
+			color: white;
+			font-size: 16px;
+			width: 80px;
+
+			h5 {
+				margin-left: 20px;
+			}
+
+			h4 {
+				margin-left: 23px;
+				margin-top: -6px;
+			}
+		}
+
+		.ribbon {
+			content: url('ribbon.png');
+			display: inline-block;
+			height: 82px;
+			opacity: 0.5;
+			width: 76px;
+		}
+
+		.weather-icon-rainy {
+			background: url('rain_icon.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			height: 37px;
+			margin-top: 16px;
+			width: 80px;
+		}
+
+		.tagline {
+			position: absolute;
+			bottom: 25px;
+			line-height: 21px;
+			font-size: 18px;
+			left: 109px;
+			color: white;
+		}
+	}
+
+	.reccomendations {
+		background-image: url('rods.png');
+		background-repeat: no-repeat;
+		color: $white;
+		height: 245px;
+		position: relative;
+		width: 320px;
+
+		h5 {
+			font-weight: 700;
+			line-height: 32px;
+			margin-top: -15px;
+		}
+
+		h6 {
+			font-weight: 400;
+			line-height: 16px;
+
+			span {
+				display: block;
+			}
+		}
+
+		.spot {
+			left: 12px;
+			position: absolute;
+			top: 90px;
+		}
+
+		.fly {
+			position: absolute;
+			right: 12px;
+			top: 90px;
+		}
+	}
+
+	.btn-warning {
+		border-radius: 50%;
+		background: #CEB13C;
+		height: 85px;
+		margin-top: -56px;
+		width: 85px;
+
+		h4 {
+			font-weight: 400;
+			letter-spacing: 3px;
+		}
+	}
+
+	footer {
+		color: $white;
+
+		h6 {
+			font-weight: 400;
+		}
+	}
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	body {
+		background: url('water.jpg');
+		background-repeat: no-repeat;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	body {
+		background: url('water.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	body {
+		background: url('water_phone.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.content {
+		margin-left: -15px;
+	}
+
+}
+
