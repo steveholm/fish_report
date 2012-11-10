@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fly.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @fly.location_id %>
+</p>
+
+<p>
+  <b>Picture url:</b>
+  <%= @fly.picture_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_fly_path(@fly) %> |
+<%= link_to 'Back', flies_path %>
